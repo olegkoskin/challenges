@@ -11,6 +11,10 @@ allprojects {
         sourceCompatibility = JavaVersion.VERSION_13
         targetCompatibility = JavaVersion.VERSION_13
     }
+
+    tasks.withType<JavaExec> {
+        enableAssertions = true
+    }
 }
 
 val test by tasks.getting(Test::class) {
