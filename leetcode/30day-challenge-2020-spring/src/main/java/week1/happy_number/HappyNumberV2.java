@@ -29,15 +29,12 @@ import java.util.Set;
  */
 public class HappyNumberV2 {
 
-    public static void main(String[] args) {
-        HappyNumberV2 happyNumber = new HappyNumberV2();
-
-        assert happyNumber.isHappy(19);
-        assert !happyNumber.isHappy(110935384);
-        assert happyNumber.isHappy(7);
-        assert happyNumber.isHappy(1111111);
-    }
-
+    /**
+     * Set contain approach.
+     *
+     * @param n number
+     * @return true if number is happy, otherwise false
+     */
     public boolean isHappy(int n) {
         Set<Integer> uniqueNum = new HashSet<>();
 

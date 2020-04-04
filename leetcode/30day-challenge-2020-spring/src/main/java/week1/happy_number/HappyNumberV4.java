@@ -26,16 +26,12 @@ package week1.happy_number;
  */
 public class HappyNumberV4 {
 
-    public static void main(String[] args) {
-        HappyNumberV4 happyNumber = new HappyNumberV4();
-
-        assert happyNumber.isHappy(19);
-        assert !happyNumber.isHappy(110935384);
-        assert happyNumber.isHappy(7);
-        assert happyNumber.isHappy(1111111);
-    }
-
-    // "Floyd's cycle-finding algorithm" also known as "Tortoise and the Hare algorithm".
+    /**
+     * "Floyd's cycle-finding algorithm" also known as "Tortoise and the Hare algorithm".
+     *
+     * @param n number
+     * @return true if number is happy, otherwise false
+     */
     public boolean isHappy(int n) {
         int slow = n;
         int fast = n;

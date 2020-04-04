@@ -18,13 +18,12 @@ package week1.single_number;
  */
 public class SingleNumber {
 
-    public static void main(String[] args) {
-        SingleNumber singleNumber = new SingleNumber();
-
-        assert singleNumber.singleNumber(new int[]{2, 2, 1}) == 1;
-        assert singleNumber.singleNumber(new int[]{4, 1, 2, 1, 2}) == 4;
-    }
-
+    /**
+     * Exclusive OR approach.
+     *
+     * @param nums nums
+     * @return single number
+     */
     public int singleNumber(int[] nums) {
         int single = nums[0];
 

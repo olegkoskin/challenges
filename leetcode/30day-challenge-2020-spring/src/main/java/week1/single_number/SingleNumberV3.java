@@ -5,13 +5,12 @@ import java.util.Map;
 
 public class SingleNumberV3 {
 
-    public static void main(String[] args) {
-        SingleNumberV3 singleNumber = new SingleNumberV3();
-
-        assert singleNumber.singleNumber(new int[]{2, 2, 1}) == 1;
-        assert singleNumber.singleNumber(new int[]{4, 1, 2, 1, 2}) == 4;
-    }
-
+    /**
+     * Map contain approach.
+     *
+     * @param nums nums
+     * @return single number
+     */
     public int singleNumber(int[] nums) {
         Map<Integer, Integer> hash1 = new HashMap<>(nums.length);
 

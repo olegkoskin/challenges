@@ -33,15 +33,12 @@ public class HappyNumber {
 
     private static final Set<Integer> UNHAPPY_NUMBERS = Set.of(2, 3, 4, 5, 6, 8, 9);
 
-    public static void main(String[] args) {
-        HappyNumber happyNumber = new HappyNumber();
-
-        assert happyNumber.isHappy(19);
-        assert !happyNumber.isHappy(110935384);
-        assert happyNumber.isHappy(7);
-        assert happyNumber.isHappy(1111111);
-    }
-
+    /**
+     * Recursion approach to simple unhappy number.
+     *
+     * @param n number
+     * @return true if number is happy, otherwise false
+     */
     public boolean isHappy(int n) {
         if (n == 1) {
             return true;

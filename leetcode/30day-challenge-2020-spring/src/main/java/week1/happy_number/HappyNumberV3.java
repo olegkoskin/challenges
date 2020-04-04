@@ -26,15 +26,12 @@ package week1.happy_number;
  */
 public class HappyNumberV3 {
 
-    public static void main(String[] args) {
-        HappyNumberV3 happyNumber = new HappyNumberV3();
-
-        assert happyNumber.isHappy(19);
-        assert !happyNumber.isHappy(110935384);
-        assert happyNumber.isHappy(7);
-        assert happyNumber.isHappy(1111111);
-    }
-
+    /**
+     * Loop approach to simple unhappy number.
+     *
+     * @param n number
+     * @return true if number is happy, otherwise false
+     */
     public boolean isHappy(int n) {
         long newNum = n;
         while (true) {
