@@ -6,6 +6,7 @@ import java.util.Set;
 
 /**
  * Happy Number
+ *
  * Write an algorithm to determine if a number is "happy".
  * <p>
  * A happy number is a number defined by the following process: Starting with any positive integer,

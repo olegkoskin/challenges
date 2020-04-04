@@ -1,5 +1,7 @@
 allprojects {
     apply(plugin = "java")
+    apply(plugin = "groovy")
+
     group = "challenges"
     version = "0.0.1-SNAPSHOT"
 
@@ -15,9 +17,9 @@ allprojects {
     tasks.withType<JavaExec> {
         enableAssertions = true
     }
-}
 
-val test by tasks.getting(Test::class) {
-    // Use junit platform for unit tests
-    useJUnitPlatform()
+    dependencies {
+        add("testImplementation", "org.codehaus.groovy:groovy-all:2.5.7")
+        add("testImplementation", "org.spockframework:spock-core:1.3-groovy-2.5")
+    }
 }
