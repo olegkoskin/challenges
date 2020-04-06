@@ -54,7 +54,6 @@ public class BestTimeToBuyAndSellStockIIV4 {
         int prev = 0; // start index of the longest ascending array
         for (int i = 1; i < n; i++) {
             // if it is ascending
-            if (prices[i] >= prices[i - 1]) continue;
             if (prices[i] < prices[i - 1]) {
                 res += prices[i - 1] - prices[prev]; // [prev, i - 1] is one longest ascending sub-array
                 prev = i;
