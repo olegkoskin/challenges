@@ -14,6 +14,7 @@ class LastStoneWeightTest extends Specification {
         where:
             stones || expectedWeight
             [2,7,4,1,8,1] as int[] || 1
+            [1,1,1,1,1,1000] as int[] || 995
     }
 
     def "Last Stone Weight. Recursion approach."() {
@@ -26,6 +27,7 @@ class LastStoneWeightTest extends Specification {
         where:
             stones || expectedWeight
             [2,7,4,1,8,1] as int[] || 1
+            [1,1,1,1,1,1000] as int[] || 995
     }
 
     def "Last Stone Weight. PriorityQueue approach."() {
@@ -38,6 +40,7 @@ class LastStoneWeightTest extends Specification {
         where:
             stones || expectedWeight
             [2,7,4,1,8,1] as int[] || 1
+            [1,1,1,1,1,1000] as int[] || 995
     }
 
 }
