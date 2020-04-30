@@ -9,4 +9,4 @@
 
 rootProject.name = "challenges"
 
-include(":leetcode:30day-challenge-2020-spring")
+include(":leetcode:30day-challenge-2020-april")
