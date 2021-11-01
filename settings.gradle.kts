@@ -11,3 +11,4 @@ rootProject.name = "challenges"
 
 include(":leetcode:30day-challenge-2020-april")
 include(":leetcode:30day-challenge-2021-april")
+include(":leetcode:30day-challenge-2021-november")
